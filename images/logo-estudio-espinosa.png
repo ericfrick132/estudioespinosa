@@ -1,0 +1,39 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle/badge -->
+  <circle cx="40" cy="40" r="35" fill="#2c5aa0" opacity="0.1"/>
+  
+  <!-- Main icon - Calculator/Ledger stylized -->
+  <g transform="translate(20, 20)">
+    <!-- Calculator body -->
+    <rect x="5" y="5" width="30" height="30" rx="3" fill="none" stroke="#2c5aa0" stroke-width="2"/>
+    
+    <!-- Calculator screen -->
+    <rect x="8" y="8" width="24" height="8" rx="1" fill="#2c5aa0" opacity="0.3"/>
+    
+    <!-- Calculator buttons -->
+    <rect x="8" y="19" width="5" height="3" fill="#2c5aa0"/>
+    <rect x="15" y="19" width="5" height="3" fill="#2c5aa0"/>
+    <rect x="22" y="19" width="5" height="3" fill="#2c5aa0"/>
+    <rect x="29" y="19" width="5" height="3" fill="#2c5aa0"/>
+    
+    <rect x="8" y="24" width="5" height="3" fill="#2c5aa0"/>
+    <rect x="15" y="24" width="5" height="3" fill="#2c5aa0"/>
+    <rect x="22" y="24" width="5" height="3" fill="#2c5aa0"/>
+    <rect x="29" y="24" width="5" height="3" fill="#2c5aa0"/>
+    
+    <rect x="8" y="29" width="5" height="3" fill="#2c5aa0"/>
+    <rect x="15" y="29" width="5" height="3" fill="#2c5aa0"/>
+    <rect x="22" y="29" width="12" height="3" fill="#2c5aa0"/>
+  </g>
+  
+  <!-- Text -->
+  <g font-family="Arial, sans-serif">
+    <!-- Main title -->
+    <text x="85" y="38" font-size="28" font-weight="700" fill="#333">ESTUDIO</text>
+    <text x="85" y="60" font-size="28" font-weight="700" fill="#2c5aa0">ESPINOSA</text>
+  </g>
+  
+  <!-- Tagline -->
+  <line x1="85" y1="68" x2="280" y2="68" stroke="#ddd" stroke-width="1"/>
+  <text x="85" y="78" font-size="10" fill="#666" font-family="Arial, sans-serif">Asesoramiento Contable, Impositivo y Laboral</text>
+</svg>

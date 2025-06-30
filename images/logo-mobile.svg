@@ -1,0 +1,18 @@
+<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ultra compact version for mobile -->
+  <g transform="translate(5, 5)">
+    <!-- Icon -->
+    <rect x="0" y="0" width="25" height="25" rx="2" fill="none" stroke="#2c5aa0" stroke-width="1.5"/>
+    <rect x="2" y="2" width="21" height="6" rx="1" fill="#2c5aa0" opacity="0.3"/>
+    <rect x="2" y="11" width="4" height="2" fill="#2c5aa0"/>
+    <rect x="8" y="11" width="4" height="2" fill="#2c5aa0"/>
+    <rect x="14" y="11" width="4" height="2" fill="#2c5aa0"/>
+    <rect x="20" y="11" width="4" height="2" fill="#2c5aa0"/>
+    <rect x="2" y="16" width="4" height="2" fill="#2c5aa0"/>
+    <rect x="8" y="16" width="4" height="2" fill="#2c5aa0"/>
+    <rect x="14" y="16" width="10" height="2" fill="#2c5aa0"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="38" y="24" font-size="16" font-weight="700" fill="#2c5aa0" font-family="Arial, sans-serif">ESPINOSA</text>
+</svg>

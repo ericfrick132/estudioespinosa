@@ -1,0 +1,15 @@
+<svg width="150" height="50" viewBox="0 0 150 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Compact version for mobile -->
+  <g transform="translate(10, 10)">
+    <!-- Icon -->
+    <rect x="0" y="0" width="30" height="30" rx="3" fill="none" stroke="#2c5aa0" stroke-width="2"/>
+    <rect x="3" y="3" width="24" height="8" rx="1" fill="#2c5aa0" opacity="0.3"/>
+    <rect x="3" y="14" width="5" height="3" fill="#2c5aa0"/>
+    <rect x="10" y="14" width="5" height="3" fill="#2c5aa0"/>
+    <rect x="17" y="14" width="5" height="3" fill="#2c5aa0"/>
+    <rect x="24" y="14" width="5" height="3" fill="#2c5aa0"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="50" y="28" font-size="20" font-weight="700" fill="#2c5aa0" font-family="Arial, sans-serif">ESPINOSA</text>
+</svg>
