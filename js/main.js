@@ -178,8 +178,51 @@ document.addEventListener('DOMContentLoaded', function() {
                 body.classList.remove('menu-open');
                 body.style.overflow = '';
             }
+
+            // Rebuild clientes slider on resize for perfect looping
+            setupClientesSlider(true);
         }, 250);
     });
+
+    // Clientes slider: build a seamless, infinite track without gaps
+    function setupClientesSlider(force) {
+        const slider = document.querySelector('.clientes-slider');
+        if (!slider) return;
+        const track = slider.querySelector('.slider-track');
+        const wrapper = slider.querySelector('.slider-wrapper');
+        if (!track || !wrapper) return;
+
+        // Cache the base HTML once (items without aria-hidden)
+        if (!slider.dataset.baseHtml || force) {
+            const baseNodes = Array.from(track.children).filter(n => !n.hasAttribute('aria-hidden'));
+            if (baseNodes.length === 0) return;
+            slider.dataset.baseHtml = baseNodes.map(n => n.outerHTML).join('');
+        }
+
+        // Build first half big enough for current viewport
+        track.innerHTML = slider.dataset.baseHtml;
+        const containerWidth = slider.offsetWidth;
+        let halfWidth = track.scrollWidth;
+
+        // Duplicate base items until the first half exceeds viewport width
+        // This avoids any blank space on wide screens
+        while (halfWidth < containerWidth * 1.2) {
+            track.insertAdjacentHTML('beforeend', slider.dataset.baseHtml);
+            halfWidth = track.scrollWidth;
+        }
+
+        // Snapshot the first half width, then append an identical second half
+        const firstHalfHTML = track.innerHTML;
+        track.insertAdjacentHTML('beforeend', firstHalfHTML.replaceAll('<div class="slider-item"', '<div class="slider-item" aria-hidden="true"'));
+
+        // Set duration based on pixels-per-second for consistent speed
+        const speedPxPerSec = 120; // adjust to taste
+        const durationSec = Math.max(10, Math.round(halfWidth / speedPxPerSec));
+        wrapper.style.setProperty('--duration', durationSec + 's');
+    }
+
+    // Initialize slider after layout is ready
+    setupClientesSlider(false);
 });
 
 // Add CSS for hidden header
