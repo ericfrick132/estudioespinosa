@@ -13,7 +13,7 @@ Para completar la configuración del sitio, necesitas:
 
 2. **Información de Contacto**: Actualizar en `index.html`:
    - Número de teléfono (actualmente: 11 2815-8055)
-   - Email (actualmente: info@estudioespinosa.com.ar)
+   - Email (actualmente: info@estudioespinosa.ar)
    - Número de WhatsApp en el enlace del botón flotante
 
 ## Estructura del Sitio
